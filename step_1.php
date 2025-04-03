@@ -44,10 +44,6 @@ foreach ($dealListResult['result'] as $deal) {
         'responsible_user' => $userArray[$deal['ASSIGNED_BY_ID']] ?? 'Неизвестный пользователь',
     ];
 
-    echo '<pre>';
-    print_r($exportData);
-    echo '</pre>';
-
     // ... Метод отправки в 1С
 
     // Когда забираем сделку - заполняем поле “Отдали в 1С” значением - да
